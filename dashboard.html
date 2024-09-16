@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>لوحة تحكم الموقع</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-md">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-center mb-4">لوحة التحكم</h2>
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">إدارة المستخدمين</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">إدارة الطلبات</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">إحصائيات الشحن</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">إعدادات النظام</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="flex-1 p-6">
+            <h1 class="text-3xl font-bold mb-6">مرحبا بك في لوحة التحكم</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="font-semibold text-xl mb-2">إجمالي المستخدمين</h2>
+                    <p class="text-3xl">150</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="font-semibold text-xl mb-2">إجمالي الطلبات</h2>
+                    <p class="text-3xl">300</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="font-semibold text-xl mb-2">الشحنات النشطة</h2>
+                    <p class="text-3xl">75</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
